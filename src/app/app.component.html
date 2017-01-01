@@ -1,0 +1,12 @@
+<label for="">titile<input type="text" [(ngModel)]="parentStatus"></label>
+<label for="">Check<input type="text" [(ngModel)]="checkThis"></label>
+<app-child-view [status]="parentStatus"></app-child-view>
+{{parentStatus}} ||
+<app-child-two></app-child-two>
+<app-parent-one>
+    <app-child-three>
+        <!--<input [(ngModel)]="baba" type="text" />-->
+        <label for="">joor o</label>
+    </app-child-three>
+    <!--content fed by grandparent-->
+</app-parent-one>
